@@ -52,3 +52,9 @@ input[type="number"]:focus {
     background: linear-gradient(to left, rgb(91, 31, 255), rgb(0, 140, 255));
     cursor: pointer;  /* Додає зміну курсору на pointer */
 }
+#errorMsg{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    font-size: medium;
+    font-weight: 600;
+}
