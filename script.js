@@ -8,10 +8,13 @@ function sendData() {
 
     if (length >= 8 && length <= 60) {
         tg.sendData(JSON.stringify({ length: length }));
-        errorMsg.textContent = ""; // прибираємо повідомлення
+        errorMsg.textContent = "";
     } else {
         errorMsg.textContent = "Введіть число від 8 до 60.";
-        input.value = ""; // очищаємо
-        setTimeout(() => input.focus(), 100); // трохи зачекати перед focus
+        input.value = "";
+        setTimeout(() => input.focus(), 100);
     }
 }
+
+// Додаємо слухача події
+document.getElementById('sendButton').addEventListener('click', sendData);
